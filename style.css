@@ -1,0 +1,178 @@
+body
+{
+    width: 100%;
+    margin: 0;
+    background-color: #ECECEC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu
+{
+    background-color: #486D52;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.menu ul
+{
+    color: #ECECEC;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+.menu li
+{
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.menu a
+{
+    padding: 10px;
+    margin: 10px;
+    color: #ECECEC;
+    text-decoration: none;
+}
+
+.menu a:hover
+{
+    opacity: 0.7;
+    transition: opacity ease-in-out 0.2s;
+}
+
+.menu .mobile-trigger {
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    float: right;
+}
+
+.main
+{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+    width: 100%;
+    justify-content: center;
+}
+
+.introduction
+{
+    flex:2;
+    padding: 45px;
+}
+
+.img_holder
+{
+    flex:1;
+    padding: 45px;
+}
+
+.profile_pic
+{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    box-shadow: 23px 22px 50px 0px #999999;
+}
+
+.contact_page
+{
+    padding: 45px;
+    display: block;
+    flex: 2;
+}
+
+.contacts {
+    list-style-type: none;
+    margin-left: -60px;
+}
+
+.contacts li {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.contacts li img
+{
+    width: 40px;
+    height: 40px;
+    padding: 20px 10px;
+}
+
+.contacts li a img:hover 
+{
+    opacity: 0.5;
+    transition: opacity ease-in-out 0.2s;
+}
+
+.row
+{
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.portfolio 
+{
+    background-color: white;
+    padding: 10px;
+}
+
+.portfolio img
+{
+    width: 100%;
+    height: auto;
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+h2
+{
+    font-weight: 100;
+}
+
+h3
+{
+    font-weight: 100;
+}
+
+@media (max-width: 600px) {
+    body{
+        max-width: 100%;
+    }
+    .links {
+        display: none;
+        right: 0;
+    }
+    .menu ul li {
+        display: block;
+        padding: 20px;
+    }
+    .menu .mobile-trigger {
+        display: inline-block;
+    }
+    .main
+    {
+        display: block;
+    }
+    .profile_pic
+    {
+        width: 100%;
+        height: auto;
+    }
+    .row
+    {
+        display: block;
+    }
+}
