@@ -1,6 +1,5 @@
 body
 {
-    width: 100%;
     margin: 0;
     background-color: #ECECEC;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -58,7 +57,6 @@ body
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    
     width: 100%;
     justify-content: center;
 }
@@ -151,13 +149,17 @@ h3
     body{
         max-width: 100%;
     }
+    .main
+    {
+        margin-top: 100px;
+    }
     .links {
         display: none;
         right: 0;
     }
     .menu ul li {
         display: block;
-        padding: 20px;
+        padding: 10px;
     }
     .menu .mobile-trigger {
         display: inline-block;
